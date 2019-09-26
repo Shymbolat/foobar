@@ -1,11 +1,10 @@
-Ecrivez un programme qui affiche les nombres de 1 à 100. Un nombre par ligne. Respectez les règles suivantes :
+Write a program that prints numbers from 1 to 100, one number per line. For each printed number, use the following rules :
 
- * Si le nombre est divisible par 3 ou contient 3, écrire "Foo" à la place de 3.
- * Si le nombre est divisible par 5 ou contient 5, écrire "Bar" à la place de 5.
- * Si le nombre est divisible par 7 ou contient 7, écrire "Qix" à la place de 7.
-
-
-Voici un exemple de rendu
+ * if the number is divisible by 3 or contains 3, replace 3 by "Foo"
+ * if the number is divisible by 5 or contains 5, replace 5 by "Bar"
+ * if the number is devisible by 7 or contains 7, replace 7 by "Qix"
+ 
+Example:
 =========================
 
 	1
@@ -23,17 +22,8 @@ Voici un exemple de rendu
 Mise à jour : clarifications sur les règles
 ===========================================
 
- * On regarde les diviseurs avant le contenu (ex: 51 -> FooBar)
- * On regarde le contenu dans l'ordre où il apparait (ex: 53 -> BarFoo)
- * On regarde les multiples dans l'ordre Foo, Bar puis Qix (ex: 21 -> FooQix)
- * 13 contient 3 donc s'écrit "Foo"
- * 15 est divisible par 3 et 5 et contient un 5 donc s'écrit "FooBarBar"
- * 33 contient deux fois 3  et est divisible par 3 donc s'écrit "FooFooFoo"
-
-A vous de jouer !
-=================
-
-Votre code doit tourner dans une JVM, si vous faites des trucs inhabituels, laissez nous des instructions pour faire tourner votre code. 
-Pour participer, forker ce projet et envoyer nous votre pull request.
-Vous présenterez votre solution le mercredi 14 Décembre lors d'un coding dojo spécial "Code Story"
-
+ * divisors have high precedence, ex: 51 -> FooBar
+ * the content is analysed in the order they appear, ex: 53 -> BarFoo
+ * 13 contains 3 so we print "Foo"
+ * 15 is divisible by 3 and 5 and contains 5, so we print "FooBarBar"
+ * 33 contains 3 two times and is divisible by 3, so we print "FooFooFoo"
