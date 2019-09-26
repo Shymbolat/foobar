@@ -18,8 +18,6 @@ Example:
 	Foo
 	Bar
 	...
-	
-Mise à jour : clarifications sur les règles
 ===========================================
 
  * divisors have high precedence, ex: 51 -> FooBar
